@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title> Programerign - oblig 3</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='script.js'></script>
+
+    <style>
+    th {
+        padding: 0 10px;
+    }
+    
+    table, td, th {
+        border: 1px solid black;
+        margin: 10px 5px 5px 5px;
+        padding: 5px;
+    }
+
+    tr:nth-child(2n+3) {
+        background-color: #ccc;
+    }
+    </style>
+</head>
+<body>
+    <h1> Nothing here now </h1>
+
+    <label for="file">Choose file to upload </label>
+    <input type="file" id="file" name="file" accept="text/csv">
+
+    <table id="myTable">
+        <tr>
+            <th>Index</th>
+            <th>Date</th>
+            <th>Transaction location</th>
+            <th>Transaction type</th>
+            <th>Spendt</th>
+        </tr>
+    </table>
+    <br>
+
+    <p id="stats"></p>
+
+</body>
+</html>

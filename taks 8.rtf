@@ -1,0 +1,29 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2509
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Task 8\
+\
+To do this I would sett  some boxes for the user to select the difrent options.\
+So a dropdown to select the date (from - to), one dropdown to select the transaction type, one dropdown to select the location. All of the dropdown could have the possibility to select multiple(?).\
+I think that it would be possible to store each dropdown in a array so I can have multiple values for each option.\
+\
+\
+To do this I would add a function to go thrue the input I have stored and look for what the user selected.\
+\
+Eksample: if a user want to select Halden and Oslo. I would use the .includes(array) feature to test if a feald contains the places the user selected. If it dues the data would be stored in a new array. That array would be the storage for the index of the transaction (that means I can always look up the content that the user selected in my main data object.\
+\
+When I want to display the content the user want I will then go thru the array and select the fealds and display just the ones I have selected (and because I have stored the index of the transaction it is easy)\
+\
+When going thru the object I know the position of all the content I need just by taking the index in the array and removing 1 ( because my index starts on 1 ).\
+\
+I think that I have programs good enough for me to just add new functions for the sorting and selecting of the data. I can also use the same table, and I think I can use the same function. If I need to change something I probably need to add a mother for loop so I can use the values in the array.\
+\
+I might need to change the functions that calculate the stats, so they can use the index in the array.\
+\
+Another way of solving this task is to store all of the values I need in a array, I did not want to do this to try to think about memory, if I have big files I need to go thru it would use some more memory, but this way is easier that the one I have explained, because I don\'92t need to refrens the main data, but the new array. A lot it the other thins I would do would still be the same, but just refrense the new array.\
+\
+If I had the time to do this bonus task I wold try the first method I explained}
